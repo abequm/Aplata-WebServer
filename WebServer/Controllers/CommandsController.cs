@@ -59,7 +59,7 @@ namespace WebServer.Controllers
                 { "OrderDesc", "true" }
             });
             var model = response.Items;
-
+            ViewData["terminalId"] = pars.terminal_Id;
             return View(model);
         }
 
